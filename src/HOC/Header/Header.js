@@ -1,24 +1,41 @@
-import React, { useState } from 'react';
-import { withRouter } from 'react-router-dom';
+import React, { useState } from "react";
+import { withRouter } from "react-router-dom";
+
+//Importing Styles
+import "./Header.css"
 
 const Header = (props) => {
-    const [sampleText, setSampleText] = useState("none");
-    const handleSearch = (e) => {
-        e.preventDefault()
+    const [searchText, setSearchText] = useState("Search Anime or Charecter");
+    const [searchType, setSearchType] = useState(0);
+
+    const hanldeSearch = () => {
         props.history.push({
             pathname: '/search',
-            state: { sampleText: sampleText }
-        })
+            state: { 
+                searchText: searchText,
+                searchType: searchType,
+             }
+        });
     }
 
     return (
-        <div>
-            <form >
-                <input type="text" value={sampleText} onChange={e => setSampleText(e.target.value)} />
-                <button onClick={(e) => handleSearch(e)}>Search</button>
-            </form>
+        <div className="Header">
+            <div className="Logo">
+                <h4>Aniverse</h4>
+            </div>
+            <div className="Search">
+                <input
+                    type="text"
+                    value={searchText}
+                    onChange={(e) => setSearchText(e.target.value)}
+                />
+            </div>
+            <div className="Selector">
+                <button onClick={() => setSearchType(0)}>Anime</button>
+                <button onClick={() => setSearchType(1)}>Charecter</button>
+            </div>
         </div>
-    )
-}
+    );
+};
 
-export default withRouter(Header)
+export default withRouter(Header);

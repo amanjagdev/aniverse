@@ -1,0 +1,21 @@
+.Header {
+  .Logo {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    color: #04bf00;
+  }
+  .Search {
+    input {
+      background: #737373;
+      border-radius: 33px;
+    }
+  }
+  .Selector {
+      button{
+        background: #04BF00;
+        border-radius: 33px;
+      }
+  }
+}

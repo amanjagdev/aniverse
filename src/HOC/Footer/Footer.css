@@ -1,0 +1,27 @@
+.Footer {
+  background: #151515;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  display: -ms-grid;
+  display: grid;
+}
+
+.Footer h4 {
+  display: -ms-grid;
+  display: grid;
+}
+
+.Footer button {
+  background: #04BF00;
+  border-radius: 123px;
+  margin: 0;
+}
+
+.Footer button a {
+  -webkit-text-emphasis: none;
+          text-emphasis: none;
+  text-decoration: none;
+  color: white;
+}
+/*# sourceMappingURL=Footer.css.map */
