@@ -2,10 +2,10 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 // import Components
-import Home from './components/Home'
-import Search from './components/Search'
-import Charecter from './components/Charecter'
-import Anime from './components/Anime'
+import Home from './components/Home/Home'
+import Search from './components/Search/Search'
+import Charecter from './components/Charecter/Charecter'
+import Anime from './components/Anime/Anime'
 
 //Importing HOC
 import Footer from './HOC/Footer/Footer'

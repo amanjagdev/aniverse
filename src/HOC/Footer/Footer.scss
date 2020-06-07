@@ -4,8 +4,11 @@
     padding: 0;
     color: #ffffff;
     display: grid;
+    grid-template-columns: 1fr 1fr;
     h4{
+        margin: 0 auto;
         display: grid;
+        grid-template-columns: 1fr 1fr;
     }
     
     button{

@@ -1,1 +1,12 @@
-/* No CSS *//*# sourceMappingURL=Home.css.map */
+.Home {
+  background: #282828;
+  color: white;
+  height: 300px;
+  margin: 0;
+  padding: 0;
+}
+
+.Home h1 {
+  margin: 0;
+}
+/*# sourceMappingURL=Home.css.map */

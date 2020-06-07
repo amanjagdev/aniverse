@@ -1,18 +1,45 @@
+.Header {
+  background: #151515;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 4fr 3fr;
+      grid-template-columns: 2fr 4fr 3fr;
+}
+
 .Header .Logo {
-  font-family: Poppins;
+  margin: 0 auto;
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
   color: #04bf00;
 }
 
+.Header .Logo h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.Header .Search {
+  margin: 0 auto;
+}
+
 .Header .Search input {
+  width: 200%;
+  outline: none;
+  border: none;
+  padding: 6px 15px;
   background: #737373;
   border-radius: 33px;
 }
 
+.Header .Selector {
+  margin: 0 auto;
+}
+
 .Header .Selector button {
-  background: #04BF00;
+  outline: none;
+  border: none;
+  background: #04bf00;
   border-radius: 33px;
 }
 /*# sourceMappingURL=Header.css.map */
