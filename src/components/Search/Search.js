@@ -5,7 +5,8 @@ import Axios from 'axios';
 import "./Search.css"
 
 //Importing HOC
-import Card from '../../HOC/Card/Card';
+import AnimeCard from '../../HOC/AnimeCard/AnimeCard';
+import CharacterCard from '../../HOC/CharacterCard/CharacterCard';
 
 const Search = (props) => {
     //Getting data
@@ -49,7 +50,9 @@ const Search = (props) => {
                 error ? (
                     <h3>{error.toString()}</h3>
                 ): result &&
-                result.map((item) => <Card item={item} key={item.mal_id} /> )
+                    searchType ?
+                    result.map((item) => <CharacterCard item={item} key={item.id} /> )
+                    : result.map((item) => <AnimeCard item={item} key={item.mal_id} /> )
             }
         </div>
     )

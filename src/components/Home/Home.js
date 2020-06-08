@@ -6,16 +6,18 @@ import Axios from 'axios';
 import "./Home.css"
 
 //Importing HOC
-import Card from "../../HOC/Card/Card";
+import CharacterCard from "../../HOC/CharacterCard/CharacterCard";
+import AnimeCard from "../../HOC/AnimeCard/AnimeCard";
 
 const Home = (props) => {
     const [animeList, setAnimeList] = useState(null);
-    // const [charecterList, setCharecterList] = useState(null);
+    const [characterList, setCharacterList] = useState(null);
 
     const fetchAnime = async () => {
         const tempAnimeList = await Axios.get("https://api.jikan.moe/v3/search/anime?limit=10");
+        const tempCharacterList = await Axios.get("https://kitsu.io/api/edge/characters");
         setAnimeList(tempAnimeList.data.results);
-        console.log(tempAnimeList.data.results);
+        setCharacterList(tempCharacterList.data.data);
     }
     useEffect(() => {
         fetchAnime();
@@ -26,9 +28,13 @@ const Home = (props) => {
             <h1>Popular Anime</h1>
             {
                 animeList &&
-                animeList.map((anime) => (<Card item={anime} key={anime.mal_id}/>))
+                animeList.map((anime) => (<AnimeCard item={anime} key={anime.mal_id}/>))
             }
-            <h1>Popular Charecters</h1>
+            <h1>Popular Characters</h1>
+            {
+                characterList &&
+                characterList.map((character) => (<CharacterCard item={character} key={character.id}/>))
+            }
         </div>
     )
 }
