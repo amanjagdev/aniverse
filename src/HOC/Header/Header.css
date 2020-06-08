@@ -11,10 +11,14 @@
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
-  color: #04bf00;
 }
 
-.Header .Logo h4 {
+.Header .Logo a {
+  color: #04bf00;
+  text-decoration: none;
+}
+
+.Header .Logo a h4 {
   margin: 0;
   padding: 0;
 }

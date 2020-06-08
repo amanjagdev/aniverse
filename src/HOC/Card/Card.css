@@ -1,0 +1,20 @@
+.Card .container {
+  margin: 20px;
+  text-align: center;
+  background: #151515;
+  border: 1px solid #04bf00;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 35px;
+  width: 200px;
+}
+
+.Card .container img {
+  border-radius: 35px 35px 0px 0px;
+  border: 1px solid #04bf00;
+}
+
+.Card .container .title {
+  font-size: small;
+}
+/*# sourceMappingURL=Card.css.map */

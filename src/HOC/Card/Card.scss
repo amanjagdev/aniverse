@@ -1,0 +1,18 @@
+.Card {
+  .container {
+    margin: 20px;
+    text-align: center;
+    background: #151515;
+    border: 1px solid #04bf00;
+    box-sizing: border-box;
+    border-radius: 35px;
+    width: 200px;
+    img {
+      border-radius: 35px 35px 0px 0px;
+      border: 1px solid #04bf00;
+    }
+    .title {
+      font-size: small;
+    }
+  }
+}

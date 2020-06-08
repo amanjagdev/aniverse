@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { withRouter } from "react-router-dom";
+import { withRouter ,Link} from "react-router-dom";
 
 //Importing Styles
 import "./Header.css"
@@ -11,17 +11,19 @@ const Header = (props) => {
     const hanldeSearch = () => {
         props.history.push({
             pathname: '/search',
-            state: { 
+            state: {
                 searchText: searchText,
                 searchType: searchType,
-             }
+            }
         });
     }
 
     return (
         <div className="Header">
             <div className="Logo">
-                <h4>Aniverse</h4>
+                <Link to="/">
+                    <h4>Aniverse</h4>
+                </Link>
             </div>
             <div className="Search">
                 <input
