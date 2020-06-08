@@ -1,1 +1,30 @@
-/* No CSS *//*# sourceMappingURL=Anime.css.map */
+.Anime {
+  background: #282828;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.Anime h1 {
+  margin: 0;
+}
+
+.Anime .more-info {
+  padding-bottom: 20px;
+}
+
+.Anime .more-info a {
+  -webkit-text-emphasis: none;
+          text-emphasis: none;
+  text-decoration: none;
+}
+
+.Anime .more-info a button {
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 50px;
+  outline: none;
+  background: #04bf00;
+  border: none;
+}
+/*# sourceMappingURL=Anime.css.map */

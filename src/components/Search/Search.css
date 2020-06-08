@@ -1,1 +1,11 @@
-/* No CSS *//*# sourceMappingURL=Search.css.map */
+.Search {
+  background: #282828;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.Search h1 {
+  margin: 0;
+}
+/*# sourceMappingURL=Search.css.map */

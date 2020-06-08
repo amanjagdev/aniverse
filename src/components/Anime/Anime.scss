@@ -1,0 +1,24 @@
+.Anime {
+  background: #282828;
+  color: white;
+  margin: 0;
+  padding: 0;
+  h1 {
+    margin: 0;
+  }
+  .more-info {
+      padding-bottom: 20px;
+    a {
+      text-emphasis: none;
+      text-decoration: none;
+      button {
+        padding: 5px 10px;
+        color: #fff;
+        border-radius: 50px;
+        outline: none;
+        background: #04bf00;
+        border: none;
+      }
+    }
+  }
+}

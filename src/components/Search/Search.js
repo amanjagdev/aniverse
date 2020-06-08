@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import Axios from 'axios';
 
+//Importing Styles
+import "./Search.css"
+
 //Importing HOC
 import Card from '../../HOC/Card/Card';
 
@@ -40,7 +43,7 @@ const Search = (props) => {
     }, [])
 
     return (
-        <div>
+        <div className="Search">
             <h1>Search Results : </h1>
             {
                 error ? (

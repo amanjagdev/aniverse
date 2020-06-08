@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import { withRouter } from 'react-router-dom';
-import Axios from 'axios'
+import Axios from 'axios';
+
+//Importing Styles
+import "./Anime.css";
 
 const Anime = (props) => {
     const animeId = props.location.state.animeId || 17;
@@ -21,12 +24,16 @@ const Anime = (props) => {
                 anime &&
                 (<div className="Anime">
                     <h1>{anime.title}</h1>
-                    <img src={anime.image_url} alt={anime.title}/>
-                    <h4>No of Episodes : {anime.episodes}</h4>
-                    <h4>No of Episodes : {anime.episodes}</h4>
+                    <img src={anime.image_url} alt={anime.title} />
+                    <h4>No of Episodes : {anime.episodes ? anime.episodes : <>Not Avialable</>}</h4>
                     <div className="summary">
                         <h4>Summary :</h4>
                         <p>{anime.synopsis}</p>
+                    </div>
+                    <div className="more-info">
+                        <a href={anime.url}>
+                            <button>Read More</button>
+                        </a>
                     </div>
                 </div>
                 )
