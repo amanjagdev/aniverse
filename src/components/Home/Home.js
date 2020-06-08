@@ -16,7 +16,6 @@ const Home = (props) => {
         const tempAnimeList = await Axios.get("https://api.jikan.moe/v3/search/anime?limit=10");
         setAnimeList(tempAnimeList.data.results);
         console.log(tempAnimeList.data.results);
-        // return animeList;
     }
     useEffect(() => {
         fetchAnime();

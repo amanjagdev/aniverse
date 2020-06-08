@@ -31,6 +31,7 @@ const Header = (props) => {
                     value={searchText}
                     onChange={(e) => setSearchText(e.target.value)}
                 />
+                <button onClick={() => hanldeSearch()}>🔎</button>
             </div>
             <div className="Selector">
                 <button onClick={() => setSearchType(0)}>Anime</button>
