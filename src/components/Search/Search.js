@@ -45,6 +45,7 @@ const Search = (props) => {
     return (
         <div className="Search">
             <h1>Search Results : </h1>
+            <div className="card-list">
             {
                 error ? (
                     <h3>{error.toString()}</h3>
@@ -53,6 +54,7 @@ const Search = (props) => {
                     result.map((item) => <CharacterCard item={item} key={item.id} /> )
                     : result.map((item) => <AnimeCard item={item} key={item.mal_id} /> ))
             }
+            </div>
         </div>
     )
 }
