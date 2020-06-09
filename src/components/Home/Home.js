@@ -25,7 +25,10 @@ const Home = (props) => {
 
     return (
         <div className="Home">
-            <h1>Popular Anime</h1>
+            {
+            //TODO : Fix this 
+            }
+            {/* <h1>Popular Anime</h1>
             {
                 animeList &&
                 animeList.map((anime) => (<AnimeCard item={anime} key={anime.mal_id}/>))
@@ -34,7 +37,8 @@ const Home = (props) => {
             {
                 characterList &&
                 characterList.map((character) => (<CharacterCard item={character} key={character.id}/>))
-            }
+            } */}
+            <div className="spacer" style={{height: "100px"}} ></div>
         </div>
     )
 }

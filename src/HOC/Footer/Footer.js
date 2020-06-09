@@ -6,8 +6,14 @@ import './Footer.css';
 const Footer = () => {
     return (
         <div className="Footer">
-            <h4>Made with love by <div className="green">Aman Kumar Jagdev</div></h4>
-            <button><a href="https://github.com/amanjagdev/aniverse" > Fork me on Github</a></button>
+            <h4>
+                <div className="main-text">
+                    Made with <i class="fas fa-heart"></i> by </div>
+                <div className="green">
+                    <a href="https://amankrjagdev.web.app">Aman Kumar Jagdev</a>
+                </div>
+            </h4>
+            <a href="https://github.com/amanjagdev/aniverse" ><button>Fork me on <i class="fab fa-github"></i></button></a>
         </div>
     )
 }

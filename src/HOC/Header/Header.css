@@ -27,6 +27,7 @@
             align-items: center;
   }
   .Header .Search-Box {
+    padding-top: 10px;
     padding-bottom: 10px;
   }
   .Header .Search-Box input {
