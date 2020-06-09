@@ -36,7 +36,7 @@ const Header = (props) => {
             </div>
             <div className="Selector">
                 <button className={searchType === 0 ? "selected" : ""} onClick={() => setSearchType(0)}>Anime</button>
-                <button className={searchType === 1 ? "selected" : ""} onClick={() => setSearchType(1)}>Charecter</button>
+                <button className={searchType === 1 ? "selected" : ""} onClick={() => setSearchType(1)}>Character</button>
             </div>
         </div>
     );

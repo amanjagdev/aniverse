@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="Footer">
             <h4>
                 <div className="main-text">
-                    Made with <i class="fas fa-heart"></i> by </div>
+                    Made with <i className="fas fa-heart"></i> by </div>
                 <div className="green">
                     <a href="https://amankrjagdev.web.app">Aman Kumar Jagdev</a>
                 </div>

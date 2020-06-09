@@ -28,7 +28,7 @@ const Character = (props) => {
                     <div className="top-section">
                         <div className="details">
                             <h4>Other Names :</h4>
-                            {   character.attributes.otherNames === [] ?
+                            {character.attributes.otherNames === [] ?
                                 character.attributes.otherNames.map((name) => {
                                     return (<>
                                         <li>{name}</li>
@@ -37,7 +37,10 @@ const Character = (props) => {
                             }
                             <h4>Name in Japanese : {character.attributes.names.ja_jp ? character.attributes.names.ja_jp : "Not Avialable"}</h4>
                         </div>
-                        <img src={character.attributes.image.original} alt={character.attributes.title} />
+                        {character.attributes.image
+                            ? <img src={character.attributes.image.original} width="198px" height="198px" alt="Character pic" />
+                            : <img src="https://pngimage.net/wp-content/uploads/2018/06/no-image-available-png-3.png" width="198px" height="198px" alt="Character pic" />
+                        }
                     </div>
                     <div className="summary">
                         <h4>Summary :</h4>
