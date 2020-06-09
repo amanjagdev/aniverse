@@ -49,10 +49,10 @@ const Search = (props) => {
             {
                 error ? (
                     <h3>{error.toString()}</h3>
-                ): result &&
-                    searchType ?
+                ): result && (
+                    searchType === 1 ?
                     result.map((item) => <CharacterCard item={item} key={item.id} /> )
-                    : result.map((item) => <AnimeCard item={item} key={item.mal_id} /> )
+                    : result.map((item) => <AnimeCard item={item} key={item.mal_id} /> ))
             }
         </div>
     )

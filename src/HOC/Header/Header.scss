@@ -1,39 +1,89 @@
 .Header {
+  padding-top: 10px;
+  padding-bottom: 10px;
   background: #151515;
-  display: grid;
-  grid-template-columns: 2fr 4fr 3fr;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 2px solid #04bf00;
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .Search-Box{
+      padding-bottom: 10px ;
+      input{
+        width: auto !important;  
+      }
+    }
+    .Selector{
+      padding-bottom: 10px ;
+
+    }
+  }
   .Logo {
-    margin: 0 auto;
+    width: 100%;
+    flex-grow: 1;
     a {
       color: #04bf00;
       text-decoration: none;
       h4 {
         margin: 0;
-        padding: 0;
+        font-size: 25px;
+        text-align: center;
       }
     }
     font-style: normal;
     font-weight: bold;
-    font-size: 30px;
   }
-  .Search {
+  .Search-Box {
+    flex-grow: 4;
     margin: 0 auto;
+    text-align: center;
+    width: 80%;
     input {
-      width: 200%;
+      font-size: 16px;
+      font-weight: 600;
+      color: #ddd;
+      width: 80%;
       outline: none;
       border: none;
       padding: 6px 15px;
       background: #737373;
-      border-radius: 33px;
+      border-radius: 33px 0px 0px 33px;
+    }
+    button {
+      border-radius: 0 33px 33px 0;
+      height: 100%;
+      padding: 6px 15px;
+      .fa-search {
+        font-size: 17px;
+        color: white;
+      }
+      background: #737373;
+      border: none;
+      outline: none;
     }
   }
   .Selector {
+    width: 100%;
+    text-align: center;
+    flex-grow: 1;
     margin: 0 auto;
     button {
+      margin: 0 3px;
+      font-size: 15px;
+      background: #737373;
       outline: none;
+      color: #9F9F9F;
       border: none;
-      background: #04bf00;
       border-radius: 33px;
+      padding: 5px 12px;
+      font-weight: 600;
+    }
+    button.selected{
+      background: #04bf00;
+      color: #fff;
     }
   }
 }

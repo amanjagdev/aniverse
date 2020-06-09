@@ -1,16 +1,49 @@
 .Header {
+  padding-top: 10px;
+  padding-bottom: 10px;
   background: #151515;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 2fr 4fr 3fr;
-      grid-template-columns: 2fr 4fr 3fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 2px solid #04bf00;
+}
+
+@media only screen and (max-width: 600px) {
+  .Header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Header .Search-Box {
+    padding-bottom: 10px;
+  }
+  .Header .Search-Box input {
+    width: auto !important;
+  }
+  .Header .Selector {
+    padding-bottom: 10px;
+  }
 }
 
 .Header .Logo {
-  margin: 0 auto;
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   font-style: normal;
   font-weight: bold;
-  font-size: 30px;
 }
 
 .Header .Logo a {
@@ -20,30 +53,68 @@
 
 .Header .Logo a h4 {
   margin: 0;
-  padding: 0;
+  font-size: 25px;
+  text-align: center;
 }
 
-.Header .Search {
+.Header .Search-Box {
+  -webkit-box-flex: 4;
+      -ms-flex-positive: 4;
+          flex-grow: 4;
   margin: 0 auto;
+  text-align: center;
+  width: 80%;
 }
 
-.Header .Search input {
-  width: 200%;
+.Header .Search-Box input {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ddd;
+  width: 80%;
   outline: none;
   border: none;
   padding: 6px 15px;
   background: #737373;
-  border-radius: 33px;
+  border-radius: 33px 0px 0px 33px;
+}
+
+.Header .Search-Box button {
+  border-radius: 0 33px 33px 0;
+  height: 100%;
+  padding: 6px 15px;
+  background: #737373;
+  border: none;
+  outline: none;
+}
+
+.Header .Search-Box button .fa-search {
+  font-size: 17px;
+  color: white;
 }
 
 .Header .Selector {
+  width: 100%;
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   margin: 0 auto;
 }
 
 .Header .Selector button {
+  margin: 0 3px;
+  font-size: 15px;
+  background: #737373;
   outline: none;
+  color: #9F9F9F;
   border: none;
-  background: #04bf00;
   border-radius: 33px;
+  padding: 5px 12px;
+  font-weight: 600;
+}
+
+.Header .Selector button.selected {
+  background: #04bf00;
+  color: #fff;
 }
 /*# sourceMappingURL=Header.css.map */
