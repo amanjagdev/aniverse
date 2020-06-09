@@ -38,6 +38,9 @@
     font-weight: bold;
   }
   .Search-Box {
+    display: flex;
+    justify-content: center;
+    // flex-direction: row;
     flex-grow: 4;
     margin: 0 auto;
     text-align: center;

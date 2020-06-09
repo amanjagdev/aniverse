@@ -59,6 +59,12 @@
 }
 
 .Header .Search-Box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-flex: 4;
       -ms-flex-positive: 4;
           flex-grow: 4;
