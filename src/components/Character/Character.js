@@ -6,7 +6,7 @@ import "./Character.css"
 
 const Character = (props) => {
 
-    const characterId = props.location.state.characterId || 17;
+    const characterId = props.location.state.characterId || 7;
     const [character, setCharacter] = useState(null);
 
     const fetchCharacter = async () => {
@@ -23,9 +23,22 @@ const Character = (props) => {
             {
                 character &&
                 (<div className="Character">
-                    <h1>{character.attributes.name}</h1>
-                    <img src={character.attributes.image.original} alt={character.attributes.title} />
-                    <h4>No of Episodes :</h4>
+                    <h1 className="title">{character.attributes.name}</h1>
+
+                    <div className="top-section">
+                        <div className="details">
+                            <h4>Other Names :</h4>
+                            {   character.attributes.otherNames === [] ?
+                                character.attributes.otherNames.map((name) => {
+                                    return (<>
+                                        <li>{name}</li>
+                                    </>)
+                                }) : "Not Avialable"
+                            }
+                            <h4>Name in Japanese : {character.attributes.names.ja_jp ? character.attributes.names.ja_jp : "Not Avialable"}</h4>
+                        </div>
+                        <img src={character.attributes.image.original} alt={character.attributes.title} />
+                    </div>
                     <div className="summary">
                         <h4>Summary :</h4>
                         <p>{character.attributes.description}</p>

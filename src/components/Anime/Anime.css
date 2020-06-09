@@ -2,11 +2,48 @@
   background: #282828;
   color: white;
   margin: 0;
-  padding: 0;
+  padding: 25px 10%;
 }
 
-.Anime h1 {
+@media only screen and (max-width: 600px) {
+  .Anime .top-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .Anime .title {
+    width: auto !important;
+  }
+}
+
+.Anime .title {
   margin: 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #04bf00;
+}
+
+.Anime .top-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Anime .top-section img {
+  border-radius: 20px;
+  border: 2px solid #04bf00;
+}
+
+.Anime .summary h4 {
+  font-size: 20px;
 }
 
 .Anime .more-info {
@@ -20,11 +57,19 @@
 }
 
 .Anime .more-info a button {
-  padding: 5px 10px;
+  margin-top: 5px;
+  padding: 7px 15px;
+  font-size: 15px;
+  font-weight: 600;
   color: #fff;
   border-radius: 50px;
   outline: none;
   background: #04bf00;
   border: none;
+}
+
+.Anime .more-info a button:hover {
+  background-color: #151515;
+  color: #04bf00;
 }
 /*# sourceMappingURL=Anime.css.map */

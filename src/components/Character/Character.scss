@@ -2,12 +2,39 @@
   background: #282828;
   color: white;
   margin: 0;
-  padding: 0;
-  h1 {
-    margin: 0;
+  padding: 25px 10%;
+  @media only screen and (max-width: 600px) {
+    .top-section{
+      flex-direction: column;
+    }
+    .title{
+
+      width: auto !important;
+    }
+}
+
+.title {
+  margin: 0;
+  width: max-content;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #04bf00;
+}
+
+.top-section{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  img{
+    border-radius: 20px;
+    border: 2px solid #04bf00
   }
-  p{
-      margin-bottom: 0;
-      padding-bottom: 10px;
+}
+
+.summary{
+  h4{
+    font-size: 20px;
   }
+}
+
 }

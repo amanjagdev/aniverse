@@ -23,9 +23,16 @@ const Anime = (props) => {
             {
                 anime &&
                 (<div className="Anime">
-                    <h1>{anime.title}</h1>
-                    <img src={anime.image_url} alt={anime.title} />
-                    <h4>No of Episodes : {anime.episodes ? anime.episodes : <>Not Avialable</>}</h4>
+                    <h1 className="title">{anime.title}</h1>
+                    <div className="top-section">
+                        <div className="details">
+                            <h4>No of Episodes : {anime.episodes ? anime.episodes : <>Not Avialable</>}</h4>
+                            <h4>Status : {anime.status ? anime.status : <>Not Avialable</>}</h4>
+                            <h4>Rating : {anime.rating ? anime.rating : <>Not Avialable</>}</h4>
+                            <h4>Score : {anime.score ? anime.score : <>Not Avialable</>}</h4>
+                        </div>
+                        <img src={anime.image_url} alt={anime.title} />
+                    </div>
                     <div className="summary">
                         <h4>Summary :</h4>
                         <p>{anime.synopsis}</p>
