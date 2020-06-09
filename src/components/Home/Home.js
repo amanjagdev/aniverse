@@ -26,15 +26,19 @@ const Home = (props) => {
     return (
         <div className="Home">
             <h1>Popular Anime</h1>
-            {
-                animeList &&
-                animeList.map((anime) => (<AnimeCard item={anime} key={anime.mal_id}/>))
-            }
-            <h1>Popular Characters</h1>
-            {
-                characterList &&
-                characterList.map((character) => (<CharacterCard item={character} key={character.id}/>))
-            }
+            <div className="card-list">
+                {
+                    animeList &&
+                    animeList.map((anime) => (<AnimeCard item={anime} key={anime.mal_id} />))
+                }
+            </div>
+            <h1 id="char-head" >Popular Characters</h1>
+            <div className="card-list">
+                {
+                    characterList &&
+                    characterList.map((character) => (<CharacterCard item={character} key={character.id} />))
+                }
+            </div>
         </div>
     )
 }

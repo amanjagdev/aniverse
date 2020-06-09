@@ -1,9 +1,27 @@
-.Home{
-    background: #282828;
-    color: white;
-    margin: 0;
-    padding: 0 0 5px 0;
-    h1{
-        margin: 0;
+.Home {
+  background: #282828;
+  color: white;
+  margin: 0;
+  padding: 25px 10%;
+  @media only screen and (max-width: 600px) {
+    h1 {
+      margin: 0 auto !important;
     }
+  }
+  h1 {
+    margin: 0;
+    width: max-content;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #04bf00;
+  }
+  #char-head {
+    margin-top: 30px;
+  }
+}
+
+.card-list {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
 }

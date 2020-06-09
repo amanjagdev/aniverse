@@ -34,8 +34,7 @@ const Search = (props) => {
     }
 
     useEffect(() => {
-
-        console.log()
+        setSearchText(escape(searchText))
         if (searchType) {
             fetchCharecter();
         } else {
