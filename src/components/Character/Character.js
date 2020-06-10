@@ -44,7 +44,7 @@ const Character = (props) => {
                     </div>
                     <div className="summary">
                         <h4>Summary :</h4>
-                        <p>{character.attributes.description}</p>
+                        <p dangerouslySetInnerHTML={{ __html: character.attributes.description }}></p>
                     </div>
                 </div>
                 )
