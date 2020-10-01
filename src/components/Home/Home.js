@@ -14,7 +14,7 @@ const Home = (props) => {
     const [characterList, setCharacterList] = useState(null);
 
     const fetchAnime = async () => {
-        const tempAnimeList = await Axios.get("https://api.jikan.moe/v3/search/anime?limit=10");
+        const tempAnimeList = await Axios.get("https://api.jikan.moe/v3/search/anime?order_by=members&limit=10");
         const tempCharacterList = await Axios.get("https://kitsu.io/api/edge/characters");
         setAnimeList(tempAnimeList.data.results);
         setCharacterList(tempCharacterList.data.data);
