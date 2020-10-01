@@ -1,30 +1,99 @@
-# aniverse
-A fun App to explore different anime and your Favourite Charecters
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/github_username/repo_name">
+    <img src="public/logo512.png" alt="Logo" width="80" height="80">
+  </a>
 
----
+  <h3 align="center">Aniverse</h3>
 
-# Development
+  <p align="center">
+    A fun App to explore different anime and your Favourite Charecters
+    <br />
+    <a href="https://github.com/amanjagdev/aniverse"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/amanjagdev/aniverse">View Demo</a>
+    ·
+    <a href="https://github.com/amanjagdev/aniverse/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/amanjagdev/aniverse/issues">Request Feature</a>
+  </p>
+</p>
 
-### `yarn start`
+<!-- TABLE OF CONTENTS -->
+## Table of Contents
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* [About the Project](#about-the-project)
+  * [Built With](#built-with)
+* [Getting Started](#getting-started)
+  * [Prerequisites](#prerequisites)
+  * [Installation](#installation)
+* [Contributing](#contributing)
 
-### `yarn test`
+<!-- ABOUT THE PROJECT -->
+## About The Project
+**Look at the exciting home page. I am sure it is bound to impress all Otakus (anime fans) out there!!!!!!**
+<img src="home.png" alt="Home">
+<img src="characters.png" alt="Characters">
+**Search the name of your favourite movie or character**
+<img src="search.png" alt="search">
+<img src="movie.png" alt="movie">
+**Conversly you can toggle between Characters and Movies**
+<img src="s.char.png" alt="search with character name">
+<img src="sanime.png" alt="search with movie name">
+### Built With
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* [React.(js)](https://reactjs.org/)
+* [Favicon](https://favicon.io/)
+* [Font Awesome](https://fontawesome.com/)
 
----
 
-# Deployment
 
-### `yarn build`
+<!-- GETTING STARTED -->
+## Getting Started
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To get a local copy up and running follow these simple steps.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### Prerequisites
+
+* npm
+```sh
+npm install npm@latest -g
+```
+* [Node.js](https://nodejs.org/en/)
+
+
+### Installation
+
+1. Clone the repo
+```sh
+git clone https://github.com/https://github.com/amanjagdev/aniverse.git
+```
+2. Install NPM packages
+```sh
+npm install
+```
+
+
+<!-- CONTRIBUTING -->
+## Contributing
+
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+
+<!-- CONTACT -->
+## Contact
+
+* [View the website live](https://aniverse.now.sh/)
+* Project Link: [https://github.com/amanjagdev/aniverse](https://github.com/amanjagdev/aniverse)
+
+
 
 
