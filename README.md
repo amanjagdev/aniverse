@@ -21,8 +21,6 @@
   </p>
 </p>
 
-
-
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
@@ -31,19 +29,19 @@
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
-* [Usage](#usage)
 * [Contributing](#contributing)
-* [Acknowledgements](#acknowledgements)
-
-
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
+**Look at the exciting home page. I am sure it is bound to impress all Otakus (anime fans) out there!!!!!!**
 <img src="home.png" alt="Home">
-
-
-
+<img src="characters.png" alt="Characters">
+**Search the name of your favourite movie or character**
+<img src="search.png" alt="search">
+<img src="movie.png" alt="movie">
+**Conversly you can toggle between Characters and Movies**
+<img src="s.char.png" alt="search with character name">
+<img src="sanime.png" alt="search with movie name">
 ### Built With
 
 * [React.(js)](https://reactjs.org/)
@@ -59,7 +57,6 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
 * npm
 ```sh
 npm install npm@latest -g
@@ -71,21 +68,12 @@ npm install npm@latest -g
 
 1. Clone the repo
 ```sh
-git clone https://github.com/https://amanjagdev/aniverse.git
+git clone https://github.com/https://github.com/amanjagdev/aniverse.git
 ```
 2. Install NPM packages
 ```sh
 npm install
 ```
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
 
 
 <!-- CONTRIBUTING -->
@@ -103,9 +91,8 @@ Contributions are what make the open source community such an amazing place to b
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
-
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+* [View the website live](https://aniverse.now.sh/)
+* Project Link: [https://github.com/amanjagdev/aniverse](https://github.com/amanjagdev/aniverse)
 
 
 
