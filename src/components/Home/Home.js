@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { withRouter } from 'react-router-dom';
 import Axios from 'axios';
+import {motion} from 'framer-motion';
 
 //Importing Styles
 import "./Home.css"
@@ -24,9 +25,9 @@ const Home = (props) => {
     }, [])
 
     return (
-        <div className="Home">
+        <div className="Home" >
             <h1>Popular Anime</h1>
-            <div className="card-list">
+            <div className="card-list" >
                 {
                     animeList &&
                     animeList.map((anime) => (<AnimeCard item={anime} key={anime.mal_id} />))

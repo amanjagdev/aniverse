@@ -10,17 +10,20 @@ import Anime from './components/Anime/Anime'
 //Importing HOC
 import Footer from './HOC/Footer/Footer'
 import Header from './HOC/Header/Header'
+import {AnimatePresence} from 'framer-motion';
 
 const App = () => {
   return (
     <Router>
       <Header />
+        <AnimatePresence>
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/search" exact component={Search} />
         <Route path="/character" exact component={Character} />
         <Route path="/anime" exact component={Anime} />
       </Switch>
+        </AnimatePresence>
       <Footer />
     </Router>
   );
