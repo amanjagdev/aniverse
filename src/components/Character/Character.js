@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Axios from "axios";
+import {motion} from 'framer-motion';
 
 //Importing Styles
 import "./Character.css"
@@ -19,7 +20,7 @@ const Character = (props) => {
     }, []);
 
     return (
-        <div>
+         <motion.div initial={{x:-1000}} animate={{x:0}}  transition={{duration:0.5,type:'tween'}}>
             {
                 character &&
                 (<div className="Character">
@@ -49,7 +50,7 @@ const Character = (props) => {
                 </div>
                 )
             }
-        </div>
+        </motion.div>
     )
 }
 

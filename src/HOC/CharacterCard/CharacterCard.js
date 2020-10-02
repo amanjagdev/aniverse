@@ -1,4 +1,5 @@
 import React from 'react';
+import {motion} from 'framer-motion';
 
 //CSS
 import './CharacterCard.css';
@@ -16,7 +17,7 @@ const CharacterCard = ({ item, history }) => {
     }
     console.log(item)
     return (
-        <div className="Card">
+        <motion.div className="Card" whileHover={{ scale: 1.1 }}>
             <div onClick={() => goToCharacter(item.id)} className="container">
                 {item.attributes.image 
                     ?<img src={item.attributes.image.original} width="198px" height="198px" alt="Character pic" />
@@ -24,7 +25,7 @@ const CharacterCard = ({ item, history }) => {
                 }
                 <div className="title">{item.attributes.name}</div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

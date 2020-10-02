@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { withRouter } from 'react-router-dom';
 import Axios from 'axios';
+import {motion} from 'framer-motion';
 
 //Importing Styles
 import "./Anime.css";
@@ -19,7 +20,7 @@ const Anime = (props) => {
     }, [])
 
     return (
-        <div>
+        <motion.div initial={{x:-1000}} animate={{x:0}}  transition={{duration:0.5,type:'tween'}}>
             {
                 anime &&
                 (<div className="Anime">
@@ -45,7 +46,7 @@ const Anime = (props) => {
                 </div>
                 )
             }
-        </div>
+        </motion.div>
     )
 }
 

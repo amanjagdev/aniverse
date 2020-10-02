@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Axios from 'axios';
+import {motion} from 'framer-motion';
 
 //Importing Styles
 import "./Search.css"
@@ -51,7 +52,7 @@ const Search = (props) => {
     }, [props.location.state]);
 
     return (
-        <div className="Search">
+        <motion.div className="Search" initial={{opacity:0}} animate={{opacity:1}}  transition={{duration:0.5}}>
             <h1>Search Results : </h1>
             <div className="card-list">
                 {
@@ -63,7 +64,7 @@ const Search = (props) => {
                             : result.map((item) => <AnimeCard item={item} key={item.mal_id} />))
                 }
             </div>
-        </div>
+        </motion.div>
     )
 }
 
