@@ -5,7 +5,7 @@ import { withRouter, Link } from "react-router-dom";
 import "./Header.css"
 
 const Header = (props) => {
-    const [searchText, setSearchText] = useState(undefined);
+    const [searchText, setSearchText] = useState("");
     const [searchType, setSearchType] = useState(0);
 
     const hanldeSearch = () => {

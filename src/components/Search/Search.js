@@ -12,14 +12,15 @@ import CharacterCard from '../../HOC/CharacterCard/CharacterCard';
 const Search = (props) => {
 
     //Getting data
-    let searchText = props.location.state.searchText;
+    const {searchText = "", searchType} = props.location.state || {};
+    const escapedText = escape(searchText)
 
     const [display,setDisplay] = useState("anime");
     const [result, setResult] = useState(null);
     const [error, setError] = useState(null);
 
     const fetchCharecter = async () => {
-        const url = `https://kitsu.io/api/edge/characters?filter[name]=${searchText}`
+        const url = `https://kitsu.io/api/edge/characters?filter[name]=${escapedText}`
         try {
             const tempResult = await Axios.get(url);
             setResult([...tempResult.data.data]);
@@ -32,7 +33,7 @@ const Search = (props) => {
     }
 
     const fetchAnime = async () => {
-        const url = `https://api.jikan.moe/v3/search/anime?q=${searchText}`
+        const url = `https://api.jikan.moe/v3/search/anime?q=${escapedText}`
         const tempResult = await Axios.get(url);
         setResult([...tempResult.data.results]);
         console.log(result);
@@ -41,15 +42,12 @@ const Search = (props) => {
 
     useEffect(() => {
         setResult(null);
-        const text = props.location.state.searchText;
-        const escapedText = escape(text);
-        searchText = escapedText;
-        if (props.location.state.searchType === 1) {
+        if (searchType === 1) {
             fetchCharecter();
         } else {
             fetchAnime();
         }
-    }, [props.location.state]);
+    }, [escapedText,searchType]);
 
     return (
         <motion.div className="Search" initial={{opacity:0}} animate={{opacity:1}}  transition={{duration:0.5}}>

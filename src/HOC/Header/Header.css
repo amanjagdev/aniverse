@@ -92,11 +92,16 @@
   background: #737373;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 
 .Header .Search-Box button .fa-search {
   font-size: 17px;
   color: white;
+}
+
+.Header .Search-Box button:hover {
+  background-color: rgba(115, 115, 115, 0.5);
 }
 
 .Header .Selector {

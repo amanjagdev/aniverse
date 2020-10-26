@@ -67,6 +67,11 @@
       background: #737373;
       border: none;
       outline: none;
+      cursor:pointer;
+
+      &:hover {
+        background-color: rgba($color: #737373, $alpha: 0.5)
+      }
     }
   }
   .Selector {
