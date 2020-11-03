@@ -19,7 +19,7 @@ const AnimeCard = ({ item, history }) => {
     return (
         <motion.div className="Card" whileHover={{ scale: 1.1 }}>
             <div onClick={() => goToAnime(item.mal_id)} className="container">
-                <img src={item.image_url} width="198px" height="198px" alt="Anime pic" />
+                <img src={item.image_url} width="198px" height="298px" alt="Anime pic" />
                 <div className="title">{item.title}</div>
                 <div className="score">{item.score}</div>
             </div>
