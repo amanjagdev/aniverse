@@ -13,8 +13,10 @@ import CharacterCard from '../../HOC/CharacterCard/CharacterCard';
 const Search = (props) => {
 
     //Getting data
-    const {searchText = "", searchType} = props.location.state || {};
+    const searchQuery = new URLSearchParams(props.location.search);
+    const searchText = searchQuery.get("query");
     const escapedText = escape(searchText)
+    const searchType = parseInt(searchQuery.get("type"));
 
     const [display,setDisplay] = useState("anime");
     const [result, setResult] = useState(null);
@@ -43,6 +45,7 @@ const Search = (props) => {
 
     useEffect(() => {
         setResult(null);
+        setError(null)
         if (searchType === 1) {
             fetchCharecter();
         } else {
