@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import Axios from 'axios';
 import {motion} from 'framer-motion';
+import Skeleton from '../Skeleton/Skeleton';
 
 //Importing Styles
-import "./Search.css"
+import "./Search.css";
 
 //Importing HOC
 import AnimeCard from '../../HOC/AnimeCard/AnimeCard';
@@ -56,10 +57,20 @@ const Search = (props) => {
                 {
                     error ? (
                         <h3>{error.toString()}</h3>
-                    ) : result && (
+                    )
+                    : result ? (
                         display === "character" ?
                             result.map((item) => <CharacterCard item={item} key={item.id} />)
-                            : result.map((item) => <AnimeCard item={item} key={item.mal_id} />))
+                            : result.map((item) => <AnimeCard item={item} key={item.mal_id} />)
+                    )
+                    : (
+                        <>
+                            <Skeleton width={200} height={240} />
+                            <Skeleton width={200} height={240} />
+                            <Skeleton width={200} height={240} />
+                            <Skeleton width={200} height={240} />
+                        </>
+                    )
                 }
             </div>
         </motion.div>
