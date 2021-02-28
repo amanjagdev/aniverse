@@ -68,7 +68,7 @@ npm install npm@latest -g
 
 1. Clone the repo
 ```sh
-git clone https://github.com/https://github.com/amanjagdev/aniverse.git
+git clone https://github.com/amanjagdev/aniverse.git
 ```
 2. Install NPM packages
 ```sh

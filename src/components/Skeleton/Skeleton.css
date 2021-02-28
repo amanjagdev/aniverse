@@ -1,0 +1,23 @@
+.skeleton__wrapper {
+    background: #666;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
+        to right,
+        #666 0%,
+        #888 40%,
+        #888 50%,
+        #888 60%,
+        #666 100%
+    );
+
+    animation: shimmer 2s ease infinite forwards;
+}
+
+@keyframes shimmer {
+    from {
+        background-position: -400px 0;
+    }
+    to {
+        background-position: 400px 0;
+    }
+}
